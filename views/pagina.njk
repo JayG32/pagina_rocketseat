@@ -1,0 +1,18 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Rocketseat - {{item.id}}</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/projeto.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+    <section class="pagina">
+            <div class="card" id="{{item.id}}">
+                <div class="card__pagina-container ">
+                    <iframe src="https://rocketseat.com.br/{{item.id}}" frameborder="0"></iframe>
+                </div>
+            </div>       
+    </section>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Rocketseat | Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/projeto.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+    <div class="container_sobre">
+        <div class="container_sobre_conteudos links">
+            <img src="{{sobre.avatar}}" alt="logo">
+            <h1> {{sobre.nome}} </h1>
+            <h2> {{sobre.descricao}} </h2>
+        </div>
+
+        <h2> {{sobre.titulo}} </h2>
+
+        <div class="links_sociais " >
+            {% for link in sobre.links_tecnologias %}  
+                <div > 
+                    <a href="{{link.url}}" target="_blank"> 
+                    <img src="{{link.tec_avatar}}" title="{{link.nome}}" alt="{{link.nome}}"> 
+                    </a>
+                </div> 
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+        

@@ -1,0 +1,45 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Rocketseat | Conteúdos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/projeto.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock %}
+
+{% block content %}
+
+    <div class="titulo_conteudo">
+        <h1> Conteúdos </h1>
+    </div>
+
+    <div class="cards_conteudos">
+        {% for item in items%}
+        <div class="cards">
+            <div class="card"  id="{{item.id}}">
+                <div class="card_img">
+                    <a href="{{item.url}}">
+                        <img src="{{item.imagem}}" alt="Imagem do curso {{item.id}}">
+                    </a>
+                </div>
+
+                <div class="card_conteudo">
+                    <p>
+                        <strong id="{{item.cor_destaque_titulo}}" >{{item.titulo1}}</strong> {{item.titulo2}}
+                    </p>
+                </div>
+
+                <div class="card_informacao" id="{{item.info_id}}">
+                    <p class="card_info_mod" >{{item.duracao}}</p>
+                    <p class="card_preco">{{item.preco}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script src="/script.js"></script>
+    
+{% endblock %}
+
+        

@@ -1,0 +1,282 @@
+/* 
+ok - Deve ser aplicado um background  
+ok - Deve ser utilizada a fonte Roboto  
+ok - O header precisa ocupar todo o espaço lateral e superior (body sem margin)
+ok - O header precisa ter um espaçamento interno de 30px em todas as direções
+ok - Os links devem ter um espaçamento de 30px entre si */
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap";
+
+:root{
+    --color-green: rgb(52, 196, 23);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    
+    background-image: url("img/bg4.png");
+    /* */
+    /* background: rgb(21, 15, 31); */
+    color: white;
+    font-family: Roboto, sans-serif;
+    /* width: 100%; */
+    overflow-x: hidden;
+    
+}
+
+.links a:hover{
+    /* color: #000; */
+    color: var(--color-green);
+    transition: color 200ms;
+    border-radius: 20px;
+   
+}
+
+/* ------------------------------------------------------------ */
+
+.header {
+    /* width: 100%; */
+    text-align: center;
+    padding: 10px 15px;
+    border-bottom: 2px solid rgb(22, 1, 34);
+    background: rgb(17, 17, 22);
+    /* transition: all 0.5s ease-in-out 0s; */
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.links_header{
+    padding: 10px;
+}
+
+.links_header a{
+    margin: 0 30px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.container_sobre{
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-top: 25px;
+}
+
+.container_sobre img{
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin: 6px 0;
+
+   
+}
+
+.container_sobre h1{
+    font-size: 38px;
+    line-height: 48px;
+    padding: 15px 0;
+}
+
+.container_sobre h1 a:hover{
+    padding: 10px;
+    border-radius: 50px;
+    color: var(--color-green);
+    transition: color 200ms;
+}
+
+.container_sobre h2{
+    padding: 10px 0;
+    font-size: 20px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* ----- */
+.links_sociais{
+    margin: 0 100px 15px 100px;
+    font-size: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.links_sociais img{
+    /* color: white; */
+    width: 60px;
+    height: 60px;
+    border: none;
+    /* border: none; */
+    /* padding: 15px; */
+    /* border: 1px solid red; */
+}
+
+.links_sociais a{
+    margin: 0 15px;
+    /* color: white; */
+}
+
+
+
+/* ------------------------------------------------------------ */
+
+.rodape{
+    background: rgb(17, 17, 22);
+    border-top: 2px solid rgb(22, 1, 34);
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.conteudo_rodape{
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.autor_rodape{
+    margin-top: 10px;
+}
+
+.links_rodape{
+    margin: 0 100px;
+    font-size: 30px;
+}
+
+.links_rodape a{
+    margin: 0 15px;
+
+}
+
+.links_rodape a:hover{
+    color: var(--color-green);
+}
+
+/* ------------------------------------------------------------ */
+
+.titulo_conteudo h1{
+    font-size: 38px;
+    text-align: center;
+    padding: 10px;
+    margin: 16px 0;
+}
+
+.cards_conteudos{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 15px;
+}
+
+.cards{
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+.card{
+    border-radius: 20px;
+    background:  rgb(17, 17, 22);
+    cursor: pointer;
+    height: 100%;
+    display: grid;
+}
+
+.card_img img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.card_conteudo,
+.card_informacao{
+    padding: 24px;
+    
+}
+
+.card_informacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.card_preco{
+    background-color:  rgb(109, 4, 158);;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#conteudo_destaque_starter{
+    color: rgb(43, 15, 201);
+}
+
+#conteudo_destaque_launchbase{
+    color: rgb(196, 127, 23);
+}
+
+#conteudo_destaque_gostack{
+    color: rgb(52, 196, 23);
+}
+
+
+
+/* ------------------------------------------ */
+
+
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+
+/* ----------------------------------- */
+.container_not-found {
+    width: 750px;
+    height: 530px;
+    margin: 0 auto;
+}
+
+.conteudo_not-found{
+    margin: 0 auto;
+    height: 100%;
+}
+
+.conteudo_not-found img{
+    width: 750px;
+    height: 530px;
+}
+
+/* ------pagina  */
+.card__pagina-container{
+    position: relative;
+    padding-top: 62.5%;
+
+}
+.card__pagina-container iframe{
+    width: 100%;
+    height: 90%;
+    /* position: absolute; */
+    top: 0;
+}
