@@ -52,4 +52,4 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 ```
 
 ---
-Desenvolvido por 👩‍💻 Janiele Nogueira
+Este projeto está licenciado nos termos da licença MIT  |  Desenvolvido por 👩‍💻 Janiele Nogueira
